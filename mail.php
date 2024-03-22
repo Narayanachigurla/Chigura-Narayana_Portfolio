@@ -6,12 +6,12 @@ $email= $_POST['email'];
 $number= $_POST['mobilenumber'];
 $message= $_POST['message'];
 $to = "chigurlanarayana007@gmail.com";
-$subject = "Mail from Narayana Chigurla";
+$subject = "Mail from $name";
 $txt ="Name: ". $name . 
 "\r\n Email: " . $email. 
 "\r\n Mobile Number :" . $number. 
 "\r\n Message :" . $message ;
-$headers = "From:chigurlanarayana007@gmail.com " . "\r\n" .
+$headers = "From: $name " . "\r\n" .
 "CC: chigurlanarayana007@gmail.com ";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
